@@ -1,0 +1,69 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 183949573 Realtime: 1226802150
+
+** MEMINFO in pid 7914 [com.wuba] **
+                   Pss      Pss   Shared  Private   Shared  Private  SwapPss     Heap     Heap     Heap
+                 Total    Clean    Dirty    Dirty    Clean    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap    41095        0       52    41008      244       16     3504    56832    44593    12238
+  Dalvik Heap    30121        0     1016    29656      100      376     4680    39115    23469    15646
+ Dalvik Other     5266        0       60     5260        8        0        0                           
+        Stack     1460        0        4     1460        0        0        0                           
+       Ashmem     1278        0       28     1264       12        0        0                           
+      Gfx dev    12088        0      792    11692        0        0        0                           
+    Other dev       12        0      132        4      120        8        0                           
+     .so mmap    14640     8652      208      664    31452     8652      204                           
+    .apk mmap    36497    35736        0       96     8676    35736        0                           
+    .ttf mmap      143        4        0        0     1144        4        0                           
+    .dex mmap    23046    12120        0       12    31564    12120        0                           
+    .oat mmap    12378     1340        0        0    56276     1340        0                           
+    .art mmap     3491      188      812     2192     9680      188       11                           
+   Other mmap     4760        0        8        8    14992     2012        0                           
+   EGL mtrack    24660        0        0    24660        0        0        0                           
+    GL mtrack    20904        0        0    20904        0        0        0                           
+      Unknown    26624        0       16    26604       72        8       99                           
+        TOTAL   259385    58040     3128   165484   154340    60460      922    95947    68062    27884
+ 
+ Dalvik Details
+        .Heap    17336        0        0    17336        0        0        0                           
+         .LOS    11465        0      424    11464        4        0      312                           
+ .LinearAlloc     1890        0       60     1884        8        0        0                           
+          .GC     3100        0        0     3100        0        0        0                           
+    .JITCache       20        0        0       20        0        0        0                           
+      .Zygote      868        0      592      404       96      376        6                           
+   .NonMoving      452        0        0      452        0        0        0                           
+ .IndirectRef      256        0        0      256        0        0        0                           
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    32036
+         Native Heap:    41008
+                Code:    58624
+               Stack:     1460
+            Graphics:    57256
+       Private Other:    35560
+              System:    33441
+ 
+               TOTAL:   259385       TOTAL SWAP PSS:      922
+ 
+ Objects
+               Views:      451         ViewRootImpl:        2
+         AppContexts:        5           Activities:        2
+              Assets:        4        AssetManagers:        3
+       Local Binders:      220        Proxy Binders:       40
+       Parcel memory:       24         Parcel count:       74
+    Death Recipients:        2      OpenSSL Sockets:        1
+ 
+ SQL
+         MEMORY_USED:     1599
+  PAGECACHE_OVERFLOW:     1348          MALLOC_SIZE:      318
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         1      825             46      801/209/7  /data/user/0/com.wuba/databases/areaDB.58
+         4       80            117      25/217/14  /data/user/0/com.wuba/databases/bugly_db_
+         4     8684             24      142/206/3  /data/user/0/com.wuba/databases/puff.netmonitor.db.a.db
+ 
+ Asset Allocations
+    zip:/data/app/com.wuba-1/base.apk:/resources.arsc: 2827K
